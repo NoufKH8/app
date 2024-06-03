@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>مذكرة المهام</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>مذكرة المهام</h1>
+    <form id="task-form">
+        <input type="text" id="task-title" placeholder="عنوان المهمة" required>
+        <textarea id="task-description" placeholder="وصف المهمة" required></textarea>
+        <input type="date" id="due-date">
+        <button type="submit">إضافة المهمة</button>
+    </form>
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>عنوان المهمة</th>
+                <th>وصف المهمة</th>
+                <th>تاريخ الاستحقاق</th>
+                <th>خيارات</th>
+            </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
